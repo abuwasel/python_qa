@@ -8,7 +8,7 @@ while True:
         if user_number in range(2,49):
             if user_number in numbers_list:
                 numbers_list.remove(user_number)
-                print(numbers_list)
+                #print(numbers_list)
                 if not numbers_list:
                   print(f'Congratulations!!! Attempts Quantity: {attempts}')
                   break
@@ -20,5 +20,5 @@ while True:
         numbers_list = original_list.copy()
         attempts = 0
         print('You have exceeded the number of attempts, start again!')
-        print(numbers_list)
+        #print(numbers_list)
         continue
