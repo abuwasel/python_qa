@@ -18,6 +18,9 @@ while True:
     student_list.append(student_name)
 
     vote_num = int(input('Please Enter Vote Number: '))
+    if vote_num != 1 :
+        vote_num = int(input('Please Enter Vote Number 2 or 1: '))
+
     v = candidates[vote_num]['vote']+1
     candidates[vote_num]['vote'] = v
 
