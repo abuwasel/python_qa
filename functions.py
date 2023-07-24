@@ -47,6 +47,17 @@ def love_calc(name:str,crush:str):
 print(love_calc('adam','mila'))
 
 
+def my_max2(x,y,z):
+    if y<x>z:
+        return x
+    elif y>z:
+        return y
+    else:
+        return z
+
+print(my_max2(1,5,8))
+
+
 def my_max(*xargs):
     max_num = xargs[0]
     for num in xargs:
