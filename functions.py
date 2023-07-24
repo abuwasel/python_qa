@@ -69,8 +69,8 @@ def my_max(*xargs):
 print(my_max(1,5,8))
 
 
-def inside(start,end,number):
+def is_inside(start,end,number):
     return start <= number <= end
 
-print(inside(1,5,6))
+print(is_inside(1,5,6))
 
