@@ -45,3 +45,15 @@ def love_calc(name:str,crush:str):
     return f'{name} {love}% {crush}'
 
 print(love_calc('adam','mila'))
+
+
+def my_max(*xargs):
+    max_num = xargs[0]
+    for num in xargs:
+        if num > max_num:
+            max_num = num
+
+    return max_num
+
+print(my_max(1,5,8))
+
