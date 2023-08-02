@@ -42,7 +42,10 @@ url = 'https://jsonplaceholder.typicode.com/users'
 res = requests.get(url)
 users = res.json()
 
+print(f'You have {len(users)} users')
+i =0
 for user in users:
-    print(user['name'])
+    i += 1
+    print(f'{i}- {user["name"]}')
 
 
